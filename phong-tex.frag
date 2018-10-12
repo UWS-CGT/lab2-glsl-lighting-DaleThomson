@@ -22,11 +22,15 @@ struct materialStruct
 uniform lightStruct light;
 uniform materialStruct material;
 uniform sampler2D textureUnit0;
+uniform float attConst;
+uniform float attLinear;
+uniform float attQuadratic;
 
 in vec3 ex_N;
 in vec3 ex_V;
 in vec3 ex_L;
 in vec2 ex_TexCoord;
+in float ex_D;
 layout(location = 0) out vec4 out_Color;
  
 void main(void) {
